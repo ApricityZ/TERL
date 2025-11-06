@@ -587,7 +587,7 @@ class MarineEnv(gym.Env):
         # Boundary penalty check
         for i, pursuer in enumerate(self.pursuers):
             if pursuer.x < 0 or pursuer.x > self.arena_size or pursuer.y < 0 or pursuer.y > self.arena_size:
-                rewards[i] -= self.boundary_penalty
+                rewards[i] += self.boundary_penalty
 
         return rewards
 
