@@ -134,3 +134,9 @@ This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for d
 ## **Contact & Support**  
 For questions, feedback, or collaboration opportunities, feel free to:  
 📌 Open an **issue** in this repository  
+
+
+## Updates
+- Fixed a minor bug in `global_reward` (boundary penalty sign).  
+  This had negligible effect on results, since boundary violations were rarely triggered.  
+
